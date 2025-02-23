@@ -1,0 +1,18 @@
+GET http://localhost:5000 HTTP/1.1
+
+###
+POST http://localhost:5000/api/todos HTTP/1.1
+Content-Type: application/json
+
+{
+  "body": "Hello World"
+}
+
+###
+PATCH http://localhost:5000/api/todos/67baf686b38f4d366ece8b19 HTTP/1.1
+Content-Type: application/json
+
+{
+  "body": "Hello World Edit",
+  "completed": true
+}
